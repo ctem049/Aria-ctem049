@@ -1,7 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
 
-<div id="main" class="col-mb-12 col-8 col-offset-2" >
+<div id="main" class="col-mb-12" >
     <div style="border-radius: 5px;
     background-color: #fff;
     margin: 30px 0;

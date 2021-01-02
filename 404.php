@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
-<div id="main" class="col-mb-12 col-8 col-offset-2">
+<div id="main" class="col-mb-12">
 	<style>#header{height:70vh}#site-meta{display:none}#background{background:url(<?php $this->options->themeUrl('assets/img/404.jpg');?>) center center no-repeat;background-size:cover;z-index:-1;position:relative}.error-page{margin-bottom:30px}input[type="text"]{padding:10px}.submit{width:50%;max-width:200px}</style>
 	<div class="error-page">
 		<h2 class="post-title">404</h2>
