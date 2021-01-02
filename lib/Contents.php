@@ -221,6 +221,8 @@ class Contents
         if ($widget instanceof Widget_Abstract) {
             add_shortcode('link-item', 'Contents::shortcode_linkitem');
             add_shortcode('link-box', 'Contents::shortcode_linkbox');
+            add_shortcode('proj-item', 'Contents::shortcode_projitem');
+            add_shortcode('proj-box', 'Contents::shortcode_projbox');
             $content = self::parseHljsWrap($content, $widget);
 
             $content = do_shortcode($content);
@@ -282,5 +284,41 @@ class Contents
     {
         return '<div class="link-box">' . do_shortcode($content) . '</div>';
     }
-    //[link-item]
+
+    /**
+     * [proj-item]短代码
+     *
+     * @param $atts
+     * @param $content
+     *
+     * @return mixed
+     */
+
+    public static function shortcode_projitem($atts, $content = '')
+    {
+        $args = shortcode_atts(array(
+            'href' => '',
+            'alt' => '',
+            'img' => '',
+            'date' => '',
+            'title' => ''
+        ), $atts);
+        $href = $args['href'] ? 'href="' . $args['href'] . '"' : "";
+        return '<div class="proj-item">
+        <div class="proj-card"><a href="'. $href .'" target="_blank"><img class="proj-img" src="' . $args['img'] . '"><span class="proj-date">' . $args['date'] . '</span></a></div>
+        <div class="proj-info"><h3 class="proj-title">' . $args['title'] . '</h3><p class="proj-name">' . $args['alt'] . '</p></div></div><br>';
+    }
+    /**
+     * [proj-box]短代码
+     *
+     * @param $atts
+     * @param $content
+     *
+     * @return mixed
+     */
+
+    public static function shortcode_projbox($atts, $content = '')
+    {
+        return '<div class="proj-box">' . do_shortcode($content) . '</div>';
+    }
 }

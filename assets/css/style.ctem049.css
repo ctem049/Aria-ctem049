@@ -1,0 +1,42 @@
+/* proj-box 样式 */
+
+.proj-box {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.proj-box br {
+    display: none;
+}
+
+.proj-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.proj-card {
+    display: block;
+    position: relative;
+}
+
+.proj-card img {
+    margin: 0 auto!important;
+    height: 18rem!important;
+    max-width: 100%!important;
+    width: 100%;
+    object-fit: cover;
+}
+
+.proj-card .proj-date {
+    top: 0;
+    left: 0;
+    padding: .5rem .75rem;
+    position: absolute;
+    background: rgba(0, 0, 0, .8);
+    color: #eee;
+}
+
+.proj-info {
+    display: block;
+}
