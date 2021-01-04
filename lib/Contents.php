@@ -305,7 +305,7 @@ class Contents
         ), $atts);
         $href = $args['href'] ? 'href="' . $args['href'] . '"' : "";
         return '<div class="proj-item">
-        <div class="proj-card"><a href="'. $href .'" target="_blank"><img class="proj-img" src="' . $args['img'] . '"><span class="proj-date">' . $args['date'] . '</span></a></div>
+        <div class="proj-card"><a '. $href .'" target="_blank"><img class="proj-img" src="' . $args['img'] . '"><span class="proj-date">' . $args['date'] . '</span></a></div>
         <div class="proj-info"><h3 class="proj-title">' . $args['title'] . '</h3><p class="proj-name">' . $args['alt'] . '</p></div></div><br>';
     }
     /**
