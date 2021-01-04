@@ -305,8 +305,8 @@ class Contents
         ), $atts);
         $href = $args['href'] ? 'href="' . $args['href'] . '"' : "";
         return '<div class="proj-item">
-        <div class="proj-card"><span class="proj-date">' . $args['date'] . '</span></div>
-        <div class="proj-info"><img class="proj-img" src="' . $args['img'] . '"><h3 class="proj-title"><a '. $href .'" target="_blank">' . $args['title'] . '</a></h3><p class="proj-name">' . $args['alt'] . '</p></div></div><br>';
+        <div class="proj-card"><span class="proj-date">' . $args['date'] . '</span><img class="proj-img" src="' . $args['img'] . '"></div>
+        <div class="proj-info"><h3 class="proj-title"><a '. $href .'" target="_blank">' . $args['title'] . '</a></h3><p class="proj-name">' . $args['alt'] . '</p></div></div><br>';
     }
     /**
      * [proj-box]短代码
