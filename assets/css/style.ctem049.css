@@ -40,3 +40,24 @@
 .proj-info {
     display: block;
 }
+
+.post-content a {
+    color: #1e61a0
+}
+
+.post-content a:hover {
+    color: #5a7ea0
+}
+
+.post-content em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.post-content code {
+    font-family: "consolas", monospace;
+}
+
+.post-content code:not([class~=hljs]) {
+    color: #a5225f;
+}
