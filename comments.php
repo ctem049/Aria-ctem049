@@ -103,7 +103,7 @@ echo $commentClass;
 					<label for="mail" <?php if ($this->options->commentsRequireMail): ?> class="required"<?php endif; ?>>
 						<i class="iconfont icon-aria-email"></i>
 					</label>
-					<input placeholder="<?php echo $this->options->commentsRequireMail ? '（必填）' : '（选填）';echo '邮箱'; ?>" type="email" name="mail" id="mail" class="text" value="<?php $this->remember('mail'); ?>"
+					<input placeholder="<?php echo $this->options->commentsRequireMail ? '（必填）' : '（选填）';echo '邮箱(使用 QQ号@qq.com 可以有qq头像哦)'; ?>" type="email" name="mail" id="mail" class="text" value="<?php $this->remember('mail'); ?>"
 					 <?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?>>
 				</p>
 				<p class="comment-input">
