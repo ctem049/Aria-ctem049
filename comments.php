@@ -96,21 +96,21 @@ echo $commentClass;
 					<label for="author" class="required">
 						<i class="iconfont icon-aria-username"></i>
 					</label>
-					<input placeholder="（*）昵称" type="text" name="author" id="author" class="text" value="<?php $this->remember('author'); ?>"
+					<input placeholder="(*)昵称" type="text" name="author" id="author" class="text" value="<?php $this->remember('author'); ?>"
 					 required />
 				</p>
 				<p class="comment-input">
 					<label for="mail" <?php if ($this->options->commentsRequireMail): ?> class="required"<?php endif; ?>>
 						<i class="iconfont icon-aria-email"></i>
 					</label>
-					<input placeholder="<?php echo $this->options->commentsRequireMail ? '（*）' : '（选填）';echo '邮箱(QQ号@qq.com 有qq头像哦)'; ?>" type="email" name="mail" id="mail" class="text" value="<?php $this->remember('mail'); ?>"
+					<input placeholder="<?php echo $this->options->commentsRequireMail ? '(*)' : '(选填)';echo '邮箱(QQ号@qq.com 有qq头像哦)'; ?>" type="email" name="mail" id="mail" class="text" value="<?php $this->remember('mail'); ?>"
 					 <?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?>>
 				</p>
 				<p class="comment-input">
 					<label for="url" <?php if ($this->options->commentsRequireURL): ?> class="required"<?php endif; ?>>
 						<i class="iconfont icon-aria-link"></i>
 					</label>
-					<input type="url" name="url" id="url" class="text" placeholder="<?php echo $this->options->commentsRequireURL ? '（*）' : '（选填）';echo '网站'; ?>"
+					<input type="url" name="url" id="url" class="text" placeholder="<?php echo $this->options->commentsRequireURL ? '(*)' : '(选填)';echo '网站'; ?>"
 					 value="<?php $this->remember('url'); ?>" <?php
 					 if ($this->options->commentsRequireURL): ?> required
 					<?php endif; ?>/>
