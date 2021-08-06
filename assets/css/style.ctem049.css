@@ -1,3 +1,9 @@
+/* 字体 */
+body {
+    color: #080808;
+    font-family: "Microsoft YaHei Light", BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 /* proj-box 样式 */
 
 .proj-box {
