@@ -15,7 +15,7 @@
                 <?php $this->content(); ?>
             </div>
             <?php Contents::getPostOther($this); ?>
-            <div class="post-update"><i class="iconfont icon-aria-date"></i>&nbsp;最后一次更新于<?php echo date($this->options->postDateFormat,$this->modified) ?></div>
+            <div class="post-update">© &nbsp; <?php $this->author(); ?> 版权所有</div>
         </div>
     </article>
     <?php $this->need('comments.php'); ?>
